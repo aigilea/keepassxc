@@ -246,7 +246,7 @@ void AutoType::raiseWindow()
 
 bool AutoType::registerGlobalShortcut(Qt::Key key, Qt::KeyboardModifiers modifiers, QString* error)
 {
-    if (!m_plugin) {
+    if (!m_plugin || QApplication::platformName().compare("wayland", Qt::CaseInsensitive) == 0) {
         return false;
     }
 

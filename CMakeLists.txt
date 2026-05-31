@@ -49,6 +49,7 @@ option(WITH_COVERAGE "Use to build with coverage tests (GCC only)." OFF)
 option(WITH_APP_BUNDLE "Enable Application Bundle for macOS" ON)
 option(WITH_CCACHE "Use ccache for build" OFF)
 option(WITH_X11 "Enable building with X11 dependencies" ON)
+option(WITH_WAYLAND "Enable building with Wayland dependencies" ON)
 
 # Advanced Features Control
 option(KPXC_MINIMAL "Build KeePassXC with the minimal feature set required for basic usage" OFF)
